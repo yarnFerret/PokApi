@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './PokeInfo.css';
-import Evolution from '../components/Evolution';
+import Evolution from '../containers/Evolution';
 
 class PokeInfo extends Component {
 
@@ -49,8 +49,7 @@ class PokeInfo extends Component {
        }
 
   render() {
-    const {pokeId, pokeBase, pokeEvo, pokeExt, testId} = this.state;
-    
+    const {pokeId, pokeBase, pokeEvo, pokeExt} = this.state;
     return !pokeBase.species?
       '':(
         <div className='container'>
@@ -81,13 +80,9 @@ class PokeInfo extends Component {
           </div>
           <div className='evo'>
             {!pokeEvo.chain ? '' : (
-              <figure className='evo1'>
-                <img src={this.evoInfo(pokeEvo.chain.species.name)} alt='' /> 
-                <figcaption>{pokeEvo.chain.species.name}</figcaption>
-              </figure>
+                <Evolution evo={pokeEvo.chain} list={this.props.list} />                 
             )
             }
-            <Evolution evo={pokeEvo.chain} cssl='2' list={this.props.list}/> 
           </div>
           <div className='varieties'>
             <div className='stripes'></div>
@@ -99,9 +94,8 @@ class PokeInfo extends Component {
             }
             </ul>
           </div>
-          
         </div>   
-          )  
+    )  
   }
 }
 
