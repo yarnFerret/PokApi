@@ -1,31 +1,12 @@
 
-.evoPic * , .evolveTo * {
-  /* display: block; */
-  /* margin: 0 auto;
-  text-align: center; */
-}
-
-.par {
-  /* display: inline-block;
-  width: 10%; */
-  /* position: relative;
-  left: 100px;
-  top: 100px; */
-  /* float: left; 
-  display:inline; */
-  /* width: 100px; */
-}
 
 .arrow {
   display: inline-block;
-  /* position: relative; */
-  /* margin: 30px auto; */
   width: 20px;
   height: 20px;
   border-top: 4px solid rgb(112, 103, 103);
   border-left: 4px solid rgb(112, 103, 103);
   transform: rotate(135deg);
-  /* left: -20px; */
 }
 
 .arrow::after{
@@ -35,20 +16,52 @@
   height: 45px;
   background-color: rgb(112, 103, 103);
   transform: rotate(-45deg) translate(15px, 4px);
-  /* left: 0;
-  top: 0; */
 }
 
-.evolveTo{
+.evo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.evolveTo, .pokemon{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* .testy{
-  position: absolute;
-} */
-.par{
+.evolveTo{
+  width: 120px;
+}
+.evolveTo span{
+  text-align: center;
+  margin: 10px;
+}
+
+.evoDet{
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.pokemon{
+  padding:20px 0;
+}
+
+.pokemon img{
+border-radius: 50%;
+padding: 10px;
+border: 4px solid #c5070759;
+background-color: #fbf3f3;
+width:100px;
+}
+
+.pokemon span{
+  font-weight: bold;
+}
+
+.evo2, .evo3{
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }

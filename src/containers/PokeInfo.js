@@ -78,7 +78,7 @@ class PokeInfo extends Component {
             </div>
                ) })}
           </div>
-          <div className='evo'>
+          <div className='evolution'>
             {!pokeEvo.chain ? '' : (
                 <Evolution evo={pokeEvo.chain} list={this.props.list} />                 
             )
