@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/PokApi/static/css/main.89fc6a7a.chunk.css",
+    "main.js": "/PokApi/static/js/main.6de1e544.chunk.js",
+    "main.js.map": "/PokApi/static/js/main.6de1e544.chunk.js.map",
+    "runtime-main.js": "/PokApi/static/js/runtime-main.27ddd1df.js",
+    "runtime-main.js.map": "/PokApi/static/js/runtime-main.27ddd1df.js.map",
+    "static/js/2.91a1577f.chunk.js": "/PokApi/static/js/2.91a1577f.chunk.js",
+    "static/js/2.91a1577f.chunk.js.map": "/PokApi/static/js/2.91a1577f.chunk.js.map",
+    "index.html": "/PokApi/index.html",
+    "precache-manifest.8cbe5547a38ba1f2125d29a4053bbc32.js": "/PokApi/precache-manifest.8cbe5547a38ba1f2125d29a4053bbc32.js",
+    "service-worker.js": "/PokApi/service-worker.js",
+    "static/css/main.89fc6a7a.chunk.css.map": "/PokApi/static/css/main.89fc6a7a.chunk.css.map",
+    "static/js/2.91a1577f.chunk.js.LICENSE.txt": "/PokApi/static/js/2.91a1577f.chunk.js.LICENSE.txt",
+    "static/media/Main.css": "/PokApi/static/media/Baloo2-Medium.188e0e53.ttf",
+    "static/media/PokeInfo.css": "/PokApi/static/media/Baloo2-Regular.a95cb88b.ttf",
+    "static/media/index.css": "/PokApi/static/media/Pokemon Solid.36d26dbc.ttf",
+    "static/media/pokeball.png": "/PokApi/static/media/pokeball.71468b87.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.27ddd1df.js",
+    "static/js/2.91a1577f.chunk.js",
+    "static/css/main.89fc6a7a.chunk.css",
+    "static/js/main.6de1e544.chunk.js"
+  ]
+}
