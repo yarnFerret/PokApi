@@ -36,6 +36,7 @@
 .evolveTo span{
   text-align: center;
   margin: 10px;
+  font-size: 0.9rem;
 }
 
 .evoDet{
@@ -45,7 +46,7 @@
 }
 
 .pokemon{
-  padding:20px 0;
+  padding:20px 10px;
 }
 
 .pokemon img{

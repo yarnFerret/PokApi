@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import './PokeInfo.css';
 import Evolution from '../containers/Evolution';
 
@@ -25,7 +25,9 @@ class PokeInfo extends Component {
       .then(() => fetch(this.state.pokeExt.evolution_chain.url)
         .then(response => response.json())
         .then(data => this.setState({pokeEvo: data}))
-      ))
+        .catch((error) => { console.error(error) }))
+      .catch((error) => { console.error(error) }))
+    .catch((error) => { console.error(error) })
    }
 
    info =(url) =>{
@@ -79,6 +81,7 @@ class PokeInfo extends Component {
                ) })}
           </div>
           <div className='evolution'>
+            <span>Evolution chain</span>
             {!pokeEvo.chain ? '' : (
                 <Evolution evo={pokeEvo.chain} list={this.props.list} />                 
             )

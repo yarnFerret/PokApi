@@ -63,6 +63,7 @@ class Evolution extends Component{
         break;
       case elem.location: arr.push('level up');
         break;
+      default:
     }
     if (elem.min_level) { arr.push(`lv. ${elem.min_level}`) }
     if (elem.min_happiness) { arr.push(`happiness ${elem.min_happiness}`) }
@@ -85,6 +86,7 @@ class Evolution extends Component{
         break;
       case -1: arr.push('Attack < Defense');
         break;
+      default:
     }
     return (arr.join(' '))
   }

@@ -25,6 +25,7 @@ class Main extends Component{
         return container;
       }))
       .then(cont => this.setState({allPokemons: cont}))
+      .catch((error) => {console.error(error)})
   }
 
   onSearchChange = (event) => {
@@ -62,6 +63,7 @@ class Main extends Component{
           </Scroll>
         </aside>
         <main>
+          <div className='line'></div>
           {(id === 0)?
           <div className='home'>
                 <h2>List of Pokémon by National Pokédex number</h2>
@@ -71,7 +73,6 @@ class Main extends Component{
           }  
          </main>
       </div>
-    
       )
   }
 }
